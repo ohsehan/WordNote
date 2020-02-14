@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".WordAdd">
+
+    <EditText
+        android:id="@+id/add_english"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="Word"
+        android:inputType="textUri"
+        android:singleLine="true"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/add_korean"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="Mean"
+        android:inputType="text"
+        android:privateImeOptions="defaultInputmode=korean"
+        android:singleLine="true"
+        android:layout_below="@+id/add_english"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/add_savebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="save"
+        android:layout_below="@+id/add_korean"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
